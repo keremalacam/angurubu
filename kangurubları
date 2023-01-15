@@ -1,0 +1,51 @@
+
+
+-- --------------------------------------------------------
+
+--
+-- Tablo için tablo yapısı `kangrubu`
+--
+
+CREATE TABLE `kangrubu` (
+  `Id` int(11) NOT NULL,
+  `kangurubu` varchar(255) COLLATE utf8_turkish_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci;
+
+--
+-- Tablo döküm verisi `kangrubu`
+--
+
+INSERT INTO `kangrubu` (`Id`, `kangurubu`) VALUES
+(1, 'A Rh (+)'),
+(2, 'A Rh (-)'),
+(3, 'B Rh (+)'),
+(4, 'B Rh (-)'),
+(5, 'AB Rh (+)'),
+(6, 'AB Rh (-)'),
+(7, '0 Rh (+)'),
+(8, '0 Rh (-)');
+
+--
+-- Dökümü yapılmış tablolar için indeksler
+--
+
+--
+-- Tablo için indeksler `kangrubu`
+--
+ALTER TABLE `kangrubu`
+  ADD PRIMARY KEY (`Id`);
+
+--
+-- Dökümü yapılmış tablolar için AUTO_INCREMENT değeri
+--
+
+--
+-- Tablo için AUTO_INCREMENT değeri `kangrubu`
+--
+ALTER TABLE `kangrubu`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
